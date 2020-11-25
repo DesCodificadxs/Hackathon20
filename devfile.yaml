@@ -1,0 +1,20 @@
+apiVersion: 1.0.0
+metadata:
+  name: python-tjmk2
+projects:
+  - name: Hackathon20
+    source:
+      location: 'https://github.com/DesCodificadxs/Hackathon20'
+      type: git
+      branch: main
+components:
+  - id: ms-python/python/latest
+    memoryLimit: 512Mi
+    preferences:
+      python.globalModuleInstallation: true
+    type: chePlugin
+  - mountSources: true
+    memoryLimit: 512Mi
+    type: dockerimage
+    alias: python
+    image: 'registry.redhat.io/codeready-workspaces/plugin-java8-rhel8@sha
