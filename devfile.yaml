@@ -17,4 +17,26 @@ components:
     memoryLimit: 512Mi
     type: dockerimage
     alias: python
-    image: 'registry.redhat.io/codeready-workspaces/plugin-java8-rhel8@sha
+     image: 'registry.redhat.io/codeready-workspaces/plugin-java8-rhel8@sha256:bf9c2de38c7f75654d6d9789fb22215f55fef0787ef6fd59b354f95883cf5e95'
+commands:
+  - name: 1. Run
+    actions:
+      - workdir: '${CHE_PROJECTS_ROOT}/python-hello-world'
+        type: exec
+        command: python hello-world.py
+        component: python
+  - name: Debug current file
+    actions:
+      - referenceContent: |
+          {
+            "version": "0.2.0",
+            "configurations": [
+              { "name": "Python: Current File",
+                "type": "python",
+                "request": "launch",
+                "program": "${file}",
+                "console": "internalConsole"
+              }
+            ]
+          }
+        type: vscode-launch
