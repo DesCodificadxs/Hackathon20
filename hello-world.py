@@ -9,7 +9,7 @@ ______________    ___
 | ___ \ ___ \ \  / /  \ 
 | |_/ / |_/ /  \/ / /\ \\
 \____/\____/     / /  \ \\
-             CHIQUIBANCO  2.0.1
+             CHIQUIBANCO  2.0.2
                                
                           
 """)
@@ -213,14 +213,14 @@ if eleccionniño == "1":
             print("TAREAS:\n",tareas)
             print("")
             print("Conseguirás tu objetivo en ", (int(objetivopuntos)/3)*int(paga)-int(saldo), "días. ")
-        else:
-            tareas = "3. Recoger la mesa despues de comer          3 puntos"
-            os.system("clear")
-            print(nombre,apellidos)
-            print("OBJETIVOS: ",objetivo)
-            print("TAREAS:\n",tareas)
-            print("")
-            print("Conseguirás tu objetivo en ", (int(objetivopuntos)/3)*int(paga)-int(saldo), "días. ")
+    else:
+        tareas = "3. Recoger la mesa despues de comer          3 puntos"
+        os.system("clear")
+        print(nombre,apellidos)
+        print("OBJETIVOS: ",objetivo)
+        print("TAREAS:\n",tareas)
+        print("")
+        print("Conseguirás tu objetivo en ", (int(objetivopuntos)/3)*int(paga)-int(saldo), "días. ")
         time.sleep(5)
         os.system("clear")
         print(nombre, apellidos)
