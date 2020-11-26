@@ -158,6 +158,7 @@ if eleccionniño == "1":
                 print("TAREAS:\n",tareas)
                 print("")
                 print("Conseguirás tu objetivo en ", (int(objetivopuntos)/2)*int(paga)-int(saldo), "días. ")
+                pass
             if tareas == "2":
                 tareas = "2. Sacar al perro            3 puntos"
                 os.system("clear")
@@ -166,7 +167,7 @@ if eleccionniño == "1":
                 print("TAREAS:\n",tareas)
                 print("")
                 print("Conseguirás tu objetivo en ", (int(objetivopuntos)/3)*int(paga)-int(saldo), "días. ")
-            if tareas == "3":
+            else:
                 tareas = "3. Recoger la mesa despues de comer          3 puntos"
                 os.system("clear")
                 print(nombre,apellidos)
@@ -174,8 +175,7 @@ if eleccionniño == "1":
                 print("TAREAS:\n",tareas)
                 print("")
                 print("Conseguirás tu objetivo en ", (int(objetivopuntos)/3)*int(paga)-int(saldo), "días. ")
-
-            
+                os.system("clear")
     if producto == "2":
         os.system("clear")
         print("CHIQUIPRESTAMOS")
@@ -196,6 +196,7 @@ if eleccionniño == "1":
         print("2. Sacar al perro            3 puntos")
         print("3. Recoger la mesa despues de comer          3 puntos")
         tareas = input("¿Que tareas quieres asociar al objetivo? ")
+        os.system("clear")
         if tareas == "1":
             tareas = "1. Hacer la cama         2 puntos."
             os.system("clear")
@@ -212,7 +213,7 @@ if eleccionniño == "1":
             print("TAREAS:\n",tareas)
             print("")
             print("Conseguirás tu objetivo en ", (int(objetivopuntos)/3)*int(paga)-int(saldo), "días. ")
-        if tareas == "3":
+        else:
             tareas = "3. Recoger la mesa despues de comer          3 puntos"
             os.system("clear")
             print(nombre,apellidos)
@@ -316,7 +317,7 @@ if eleccionniño == "2":
                 print("TAREAS:\n",tareas2)
                 print("")
                 print("Conseguirás tu objetivo en ", (int(objetivopuntos2)/3)*int(paga2)-int(saldo2), "días. ")
-            if tareas2 == "3":
+            else:
                 tareas2 = "3. Recoger la mesa despues de comer          3 puntos"
                 os.system("clear")
                 print(nombre2,apellidos2)
@@ -324,8 +325,6 @@ if eleccionniño == "2":
                 print("TAREAS:\n",tareas2)
                 print("")
                 print("Conseguirás tu objetivo en ", (int(objetivopuntos2)/3)*int(paga2)-int(saldo2), "días. ")
-
-            
     if producto2 == "2":
         os.system("clear")
         print("CHIQUIPRESTAMOS")
@@ -362,7 +361,7 @@ if eleccionniño == "2":
             print("TAREAS:\n",tareas2)
             print("")
             print("Conseguirás tu objetivo en ", (int(objetivopuntos2)/3)*int(paga2)-int(saldo2), "días. ")
-        if tareas2 == "3":
+        else:
             tareas2 = "3. Recoger la mesa despues de comer          3 puntos"
             os.system("clear")
             print(nombre2,apellidos2)
@@ -370,7 +369,6 @@ if eleccionniño == "2":
             print("TAREAS:\n",tareas2)
             print("")
             print("Conseguirás tu objetivo en ", (int(objetivopuntos2)/3)*int(paga2)-int(saldo2), "días. ")
-        time.sleep(5)
         os.system("clear")
         print(nombre2, apellidos2)
         print("PRODUCTOS ASOCIADOS: ")
