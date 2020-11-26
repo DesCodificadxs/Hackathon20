@@ -46,7 +46,7 @@ if opcion is "1":
         print("Número de cuenta desde la que realziará el pago: ", numerocuenta)
         print("El pago se realizará cada", paga, " días.")
         print("1 punto ganado equivale a ", 1/int(conversion), " euros")
-        time.sleep(10)
+        time.sleep(5)
         os.system("clear")
     except Exception:
         pass
