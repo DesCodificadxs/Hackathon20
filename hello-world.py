@@ -9,7 +9,7 @@ ______________    ___
 | ___ \ ___ \ \  / /  \ 
 | |_/ / |_/ /  \/ / /\ \\
 \____/\____/     / /  \ \\
-             CHIQUIBANCO  2.0.2
+             CHIQUIBANCO  2.0.3
                                
                           
 """)
@@ -221,20 +221,20 @@ if eleccionniño == "1":
         print("TAREAS:\n",tareas)
         print("")
         print("Conseguirás tu objetivo en ", (int(objetivopuntos)/3)*int(paga)-int(saldo), "días. ")
-        time.sleep(5)
-        os.system("clear")
-        print(nombre, apellidos)
-        print("PRODUCTOS ASOCIADOS: ")
-        print("2. Chiquiprestamo")
-        print("     -Objetivo: ",objetivo)
-        print("     -Tareas: ",tareas)
-        print("")
-        saldo = "0"
-        print("")
-        print("PRODUCTOS ASOCIABLES")
-        print("1. Chiquicuenta")
-        producto = input("Selecciona un producto para añadir: ")
-        os.system("clear")
+    time.sleep(5)
+    os.system("clear")
+    print(nombre, apellidos)
+    print("PRODUCTOS ASOCIADOS: ")
+    print("2. Chiquiprestamo")
+    print("     -Objetivo: ",objetivo)
+    print("     -Tareas: ",tareas)
+    print("")
+    saldo = "0"
+    print("")
+    print("PRODUCTOS ASOCIABLES")
+    print("1. Chiquicuenta")
+    producto = input("Selecciona un producto para añadir: ")
+    os.system("clear")
         if producto == "1":
             print(nombre, apellidos)
             print("PRODUCTOS ASOCIADOS:")
