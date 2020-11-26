@@ -400,3 +400,16 @@ if eleccionniño == "2":
             print("     -Objetivo: ",objetivo2)
             print("     -Tareas: ",tareas2)
             print("")
+
+
+
+
+
+
+
+
+
+
+
+
+
