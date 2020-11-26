@@ -9,7 +9,7 @@ ______________    ___
 | ___ \ ___ \ \  / /  \ 
 | |_/ / |_/ /  \/ / /\ \\
 \____/\____/     / /  \ \\
-             CHIQUIBANCO  2.0  
+             CHIQUIBANCO  2.0.1
                                
                           
 """)
@@ -93,7 +93,7 @@ if mashijos.upper() == "S":
         print("Número de cuenta desde la que realziará el pago: ", numerocuenta2)
         print("El pago se realizará cada", paga2, " días.")
         print("1 punto ganado equivale a ", 1/int(conversion2), " euros")
-        time.sleep(10)
+        time.sleep(5)
         os.system("clear")
 else:
     pass
