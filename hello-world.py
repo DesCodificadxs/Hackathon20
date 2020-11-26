@@ -117,6 +117,17 @@ if eleccionniño == "1":
         print("")
         print("PRODUCTOS ASOCIABLES")
         print("2. Chiquiprestamo")
+        print("")
+        añadirsaldo = input("Antes de añadir más productos, ¿Cuanto saldo quieres añadir a tu Chiquicuenta?: ")
+        saldo = saldo + añadirsaldo
+        os.system("clear")
+        print(nombre, apellidos)
+        print("PRODUCTOS ASOCIADO:")
+        print("1. Chiquicuenta      Saldo:", saldo)
+        print("")
+        print("PRODUCTOS ASOCIABLES")
+        print("2. Chiquiprestamo")
+        print("")
         producto = input("Selecciona producto para añadir: ")
         if producto == "2":
             os.system("clear")
@@ -145,7 +156,7 @@ if eleccionniño == "1":
                 print("OBJETIVOS: ",objetivo)
                 print("TAREAS:\n",tareas)
                 print("")
-                print("Conseguirás tu objetivo en ", (int(objetivopuntos)/2)*int(paga), "días. ")
+                print("Conseguirás tu objetivo en ", (int(objetivopuntos)/2)*int(paga)-int(saldo), "días. ")
             if tareas == "2":
                 tareas = "2. Sacar al perro            3 puntos"
                 os.system("clear")
@@ -153,7 +164,7 @@ if eleccionniño == "1":
                 print("OBJETIVOS: ",objetivo)
                 print("TAREAS:\n",tareas)
                 print("")
-                print("Conseguirás tu objetivo en ", (int(objetivopuntos)/3)*int(paga), "días. ")
+                print("Conseguirás tu objetivo en ", (int(objetivopuntos)/3)*int(paga)-int(saldo), "días. ")
             if tareas == "3":
                 tareas = "3. Recoger la mesa despues de comer          3 puntos"
                 os.system("clear")
@@ -161,7 +172,7 @@ if eleccionniño == "1":
                 print("OBJETIVOS: ",objetivo)
                 print("TAREAS:\n",tareas)
                 print("")
-                print("Conseguirás tu objetivo en ", (int(objetivopuntos)/3)*int(paga), "días. ")
+                print("Conseguirás tu objetivo en ", (int(objetivopuntos)/3)*int(paga)-int(saldo), "días. ")
 
             
     if producto == "2":
@@ -191,7 +202,7 @@ if eleccionniño == "1":
             print("OBJETIVOS: ",objetivo)
             print("TAREAS:\n",tareas)
             print("")
-            print("Conseguirás tu objetivo en ", (int(objetivopuntos)/2)*int(paga), "días. ")
+            print("Conseguirás tu objetivo en ", (int(objetivopuntos)/2)*int(paga)-int(saldo), "días. ")
         if tareas == "2":
             tareas = "2. Sacar al perro            3 puntos"
             os.system("clear")
@@ -199,7 +210,7 @@ if eleccionniño == "1":
             print("OBJETIVOS: ",objetivo)
             print("TAREAS:\n",tareas)
             print("")
-            print("Conseguirás tu objetivo en ", (int(objetivopuntos)/3)*int(paga), "días. ")
+            print("Conseguirás tu objetivo en ", (int(objetivopuntos)/3)*int(paga)-int(saldo), "días. ")
         if tareas == "3":
             tareas = "3. Recoger la mesa despues de comer          3 puntos"
             os.system("clear")
@@ -207,12 +218,42 @@ if eleccionniño == "1":
             print("OBJETIVOS: ",objetivo)
             print("TAREAS:\n",tareas)
             print("")
-            print("Conseguirás tu objetivo en ", (int(objetivopuntos)/3)*int(paga), "días. ")
+            print("Conseguirás tu objetivo en ", (int(objetivopuntos)/3)*int(paga)-int(saldo), "días. ")
+        time.sleep(5)
+        os.system("clear")
+        print(nombre, apellidos)
+        print("PRODUCTOS ASOCIADOS: ")
+        print("2. Chiquiprestamo")
+        print("     -Objetivo: ",objetivo)
+        print("     -Tareas: ",tareas)
+        print("")
+        saldo = "0"
+        print("")
+        print("PRODUCTOS ASOCIABLES")
+        print("1. Chiquicuenta")
+        producto = input("Selecciona un producto para añadir: ")
+        os.system("clear")
+        if producto == "1":
+            print(nombre, apellidos)
+            print("PRODUCTOS ASOCIADOS:")
+            print("1. Chiquicuenta      Saldo:", saldo)
+            print("2. Chiquiprestamo")
+            print("")
+            añadirsaldo = input("Antes de añadir más productos, ¿Cuanto saldo quieres añadir a tu Chiquicuenta?: ")
+            saldo = saldo + añadirsaldo
+            os.system("clear")
+            print(nombre, apellidos)
+            print("PRODUCTOS ASOCIADO:")
+            print("1. Chiquicuenta      Saldo:", saldo)
+            print("2. Chiquiprestamo")
+            print("     -Objetivo: ",objetivo)
+            print("     -Tareas: ",tareas)
+            print("")
 
 if eleccionniño == "2":
     print(nombre2, apellidos2)
     print("")
-    saldo = "0"
+    saldo2 = "0"
     print("")
     print("PRODUCTOS ASOCIABLES")
     print("1. Chiquicuenta")
@@ -226,6 +267,17 @@ if eleccionniño == "2":
         print("")
         print("PRODUCTOS ASOCIABLES")
         print("2. Chiquiprestamo")
+        print("")
+        añadirsaldo2 = input("Antes de añadir más productos, ¿Cuanto saldo quieres añadir a tu Chiquicuenta?: ")
+        saldo2 = saldo2 + añadirsaldo2
+        os.system("clear")
+        print(nombre2, apellidos2)
+        print("PRODUCTOS ASOCIADO:")
+        print("1. Chiquicuenta      Saldo:", saldo2)
+        print("")
+        print("PRODUCTOS ASOCIABLES")
+        print("2. Chiquiprestamo")
+        print("")
         producto2 = input("Selecciona producto para añadir: ")
         if producto2 == "2":
             os.system("clear")
@@ -254,7 +306,7 @@ if eleccionniño == "2":
                 print("OBJETIVOS: ",objetivo2)
                 print("TAREAS:\n",tareas2)
                 print("")
-                print("Conseguirás tu objetivo en ", (int(objetivopuntos2)/2)*int(paga2), "días. ")
+                print("Conseguirás tu objetivo en ", (int(objetivopuntos2)/2)*int(paga2)-int(saldo2), "días. ")
             if tareas2 == "2":
                 tareas2 = "2. Sacar al perro            3 puntos"
                 os.system("clear")
@@ -262,7 +314,7 @@ if eleccionniño == "2":
                 print("OBJETIVOS: ",objetivo2)
                 print("TAREAS:\n",tareas2)
                 print("")
-                print("Conseguirás tu objetivo en ", (int(objetivopuntos2)/3)*int(paga2), "días. ")
+                print("Conseguirás tu objetivo en ", (int(objetivopuntos2)/3)*int(paga2)-int(saldo2), "días. ")
             if tareas2 == "3":
                 tareas2 = "3. Recoger la mesa despues de comer          3 puntos"
                 os.system("clear")
@@ -270,10 +322,10 @@ if eleccionniño == "2":
                 print("OBJETIVOS: ",objetivo2)
                 print("TAREAS:\n",tareas2)
                 print("")
-                print("Conseguirás tu objetivo en ", (int(objetivopuntos2)/3)*int(paga2), "días. ")
+                print("Conseguirás tu objetivo en ", (int(objetivopuntos2)/3)*int(paga2)-int(saldo2), "días. ")
 
             
-    if producto == "2":
+    if producto2 == "2":
         os.system("clear")
         print("CHIQUIPRESTAMOS")
         print("")
@@ -300,7 +352,7 @@ if eleccionniño == "2":
             print("OBJETIVOS: ",objetivo2)
             print("TAREAS:\n",tareas2)
             print("")
-            print("Conseguirás tu objetivo en ", (int(objetivopuntos2)/2)*int(paga2), "días. ")
+            print("Conseguirás tu objetivo en ", (int(objetivopuntos2)/2)*int(paga2)-int(saldo2), "días. ")
         if tareas2 == "2":
             tareas2 = "2. Sacar al perro            3 puntos"
             os.system("clear")
@@ -308,7 +360,7 @@ if eleccionniño == "2":
             print("OBJETIVOS: ",objetivo2)
             print("TAREAS:\n",tareas2)
             print("")
-            print("Conseguirás tu objetivo en ", (int(objetivopuntos2)/3)*int(paga2), "días. ")
+            print("Conseguirás tu objetivo en ", (int(objetivopuntos2)/3)*int(paga2)-int(saldo2), "días. ")
         if tareas2 == "3":
             tareas2 = "3. Recoger la mesa despues de comer          3 puntos"
             os.system("clear")
@@ -316,4 +368,34 @@ if eleccionniño == "2":
             print("OBJETIVOS: ",objetivo2)
             print("TAREAS:\n",tareas2)
             print("")
-            print("Conseguirás tu objetivo en ", (int(objetivopuntos2)/3)*int(paga2), "días. "
+            print("Conseguirás tu objetivo en ", (int(objetivopuntos2)/3)*int(paga2)-int(saldo2), "días. ")
+        time.sleep(5)
+        os.system("clear")
+        print(nombre2, apellidos2)
+        print("PRODUCTOS ASOCIADOS: ")
+        print("2. Chiquiprestamo")
+        print("     -Objetivo: ",objetivo2)
+        print("     -Tareas: ",tareas2)
+        print("")
+        saldo2 = "0"
+        print("")
+        print("PRODUCTOS ASOCIABLES")
+        print("1. Chiquicuenta")
+        producto2 = input("Selecciona un producto para añadir: ")
+        os.system("clear")
+        if producto2 == "1":
+            print(nombre2, apellidos2)
+            print("PRODUCTOS ASOCIADOS:")
+            print("1. Chiquicuenta      Saldo:", saldo2)
+            print("2. Chiquiprestamo")
+            print("")
+            añadirsaldo2 = input("Antes de añadir más productos, ¿Cuanto saldo quieres añadir a tu Chiquicuenta?: ")
+            saldo2 = saldo2 + añadirsaldo2
+            os.system("clear")
+            print(nombre2, apellidos2)
+            print("PRODUCTOS ASOCIADO:")
+            print("1. Chiquicuenta      Saldo:", saldo2)
+            print("2. Chiquiprestamo")
+            print("     -Objetivo: ",objetivo2)
+            print("     -Tareas: ",tareas2)
+            print("")
